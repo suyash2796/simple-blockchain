@@ -1,16 +1,7 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May  5 10:29:39 2020
-
-@author: suyash
-"""
 import datetime
 import hashlib
 import json
 from flask import Flask, jsonify
-
-## part1 building blockchain
 
 class BlockChain:
     def __init__(self):
@@ -61,9 +52,6 @@ class BlockChain:
             previous_block = block
             block_index += 1
         return True
-    
-
-## part2 building webapp
 
 app = Flask(__name__)
 
